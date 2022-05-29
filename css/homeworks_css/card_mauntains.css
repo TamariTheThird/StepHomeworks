@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(112, 128, 144, 0.137);
+  font-family: 'Linden Hill', serif;
+}
+
+section {
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 310px;
+  height: 440px;
+  background-color: white;
+  box-shadow: 13px 13px 17px rgba(87, 83, 83, 0.137);
+  border-radius: 3%;
+  margin: 40px 20px;
+}
+
+.box img {
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+.text {
+  color: black;
+  line-height: 1.2;
+  line-break: normal;
+  margin: 20px 27px 0px 27px;
+}
+
+.text h2 {
+  font-size: 30px;
+  opacity: 0.9;
+  letter-spacing: 1.5px;
+  margin: 0px;
+}
+
+.text p {
+  font-size: 20px;
+  opacity: 0.5;
+  margin: 20px 0px 0px 0px;
+}
+
+.box a {
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgba(50, 50, 228, 0.527);
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: rgba(213, 232, 238, 0.719);
+  margin: 20px 20px 25px 20px;
+  padding: 15px;
+  display: block;
+}
+
+a:hover {
+  background-color: rgba(80, 125, 211, 0.404);
+  color: black;
+}

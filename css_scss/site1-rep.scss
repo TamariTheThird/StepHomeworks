@@ -1,0 +1,54 @@
+@media (max-width: 1040px) and (min-width: 300px) {
+  .nav-list1 {
+    display: none;
+  }
+
+  header {
+    background: none;
+    .text {
+      width: 100%;
+    }
+  }
+  .burger-menu {
+    display: block;
+    margin-left: auto;
+    font-size: 25px;
+  }
+
+  .part1-70,
+  .part2-30,
+  .part3-50 {
+    width: 100%;
+  }
+  .big-img,
+  .medium-img,
+  .small-img {
+    height: 460px;
+  }
+
+  .blog-section {
+    .inner-container {
+      justify-content: center;
+    }
+    .card {
+      width: 80%;
+      img {
+        height: 380px;
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .img-section {
+    .nav-list2 {
+      li {
+        @include nav-list();
+        a {
+          padding: 9px 13px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

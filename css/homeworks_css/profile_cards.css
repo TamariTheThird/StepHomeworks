@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(112, 128, 144, 0.137);
+    font-family: 'Shippori Mincho', serif;
+}
+
+section{
+    width: 100%;  
+    justify-content: center; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1{
+    width: 330px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 13px 13px 17px rgba(87, 83, 83, 0.137);
+    border-radius: 1%;
+    margin:40px 20px; 
+    display: flex;
+    flex-direction: column;  
+}
+
+.img{
+    width: 100%;
+    height: 45%;
+    background-image: url(../../images/office\ worker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;    
+}
+
+.headings{
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 0.4;
+    margin: 10px;
+}
+
+.headings h1{
+    font-size: 24px;
+    color: rgba(36, 34, 34, 0.925);
+}
+
+.headings h2{
+    font-size: 20px;
+    color:rgb(218, 82, 82);
+}
+
+.text p{
+    font-size: 16px;
+    color:black;   
+    line-break: normal;
+    margin: 0px 20px 0px 20px;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.text a{
+    text-decoration: none;
+    text-transform: capitalize ;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(218, 82, 82);
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.text a:hover{
+    background-color: rgb(109, 138, 60);
+}
+
+

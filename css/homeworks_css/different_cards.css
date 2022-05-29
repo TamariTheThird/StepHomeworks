@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(112, 128, 144, 0.137);
+  font-family: 'Linden Hill', serif;
+}
+
+section {
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1,
+.box2,
+.box3 {
+  width: 320px;
+  height: 460px;
+  background-color: white;
+  box-shadow: 13px 13px 17px rgba(87, 83, 83, 0.137);
+  border-radius: 8px;
+  margin: 20px 30px 20px 20px;
+  /* display: flex;
+    flex-direction: column;     */
+}
+
+.box1-img,
+.box2-img,
+.box3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.box1-text,
+.box2-text,
+.box3-text {
+  color: black;
+  word-wrap: break-word;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/* box1 */
+
+.box1-img {
+  height: 45%;
+  background-image: url(../../images/yoga1.jpg);
+  border-bottom-right-radius: 53px;
+}
+
+.box1 a {
+  color: rgb(50, 50, 173);
+  margin: 45px 0px 0px 20px;
+}
+
+/* box2 */
+
+.box2-img {
+  height: 70%;
+  background-image: url(../../images/yoga2.jpg);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: relative;
+}
+
+.box2 i {
+  color: black;
+  background-color: rgb(201, 134, 11);
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 250px;
+  margin-top: 270px;
+  position: absolute;
+}
+
+/* box3 */
+
+.box3 {
+  background-image: url(../../images/yoga3.jpg);
+}
+
+.box3-text {
+  margin-top: 85%;
+  color: rgba(247, 240, 240, 0.945);
+}
+
+.box3 a {
+  color: white;
+  margin-left: 20px;
+}

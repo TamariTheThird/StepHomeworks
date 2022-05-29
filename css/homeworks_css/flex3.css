@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: rgba(221, 148, 191, 0.212);
+}
+section {
+  width: 800px;
+  max-width: 100%;
+  margin: 110px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content-body {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  box-shadow: 8px 8px 15px rgba(206, 197, 197, 0.425);
+}
+
+/* ნაწ.1 */
+.img {
+  width: 35%;
+  background-image: url(../../images/siettle.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* ნაწ.2 */
+.content {
+  width: 65%;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* ნაწ.2-1 */
+.theme {
+  margin: auto;
+  padding: 50px 25px 5px 25px;
+}
+.theme h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.75;
+}
+.line1 {
+  width: 15%;
+  margin-top: 5px;
+}
+
+/* ნაწ.2-2 */
+.text {
+  padding: 15px 25px;
+}
+.text h1 {
+  font-size: 28px;
+  text-transform: capitalize;
+  padding: 10px 0px;
+}
+.text span {
+  text-transform: lowercase;
+}
+.text p {
+  font-size: 20px;
+  line-height: 1.5;
+  opacity: 0.85;
+  padding: 15px 0px;
+}
+.line2 {
+  margin: 5px auto;
+}
+/* ნაწ.3 */
+.author {
+  padding: 15px 25px;
+}
+.author span {
+  font-size: 22px;
+  text-transform: capitalize;
+}

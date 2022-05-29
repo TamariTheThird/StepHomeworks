@@ -1,0 +1,197 @@
+
+body{
+   background-color: rgb(11, 11, 44);
+}
+
+header,footer{
+   width: 97%;
+   margin: 25px ;
+   background-color: antiquewhite;
+}
+
+header{
+   height: 100px;
+   border: 7px double rgb(121, 43, 63);
+}
+
+#span_name{
+   padding-left: 25px;
+   margin-top: 35px;
+
+   font-size: xx-large;
+   font-weight: bold;
+   font-style: oblique;
+   text-transform: uppercase;
+   color: rgb(95, 10, 33);
+   word-spacing: 15px;
+   text-shadow: 3px 4px  rgb(219, 161, 176);
+
+   display:inline-block;
+}
+
+.nav{ 
+   width: 500px;
+   height: auto;
+   background-color: rgb(240, 206, 214);
+   float: right;
+   margin-right: 150px;  
+   margin-top: 20px;
+}
+
+.nav_items li {
+   display: inline-block;
+   padding-left: 30px;  
+   list-style: none;
+}
+
+.nav_items li a{
+   font-size: large;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: rgb(163, 59, 87)
+}
+
+section{
+   width: 97%;
+   margin: 25px ;
+   background-color: antiquewhite;
+   height: auto;
+  
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   border: 5px solid  rgb(219, 161, 176);
+ 
+}
+
+article,div{
+   width:93%;
+   height:auto;
+   background-color:rgb(240, 206, 214);
+   display: inline-block;
+   margin-left: 25px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   padding-left: 20px;
+   padding-right: 15px;    
+   padding-top: 15px;
+
+   text-align: justify;
+}   
+
+h1{
+   font-size: xx-large;
+   color:rgb(92, 80, 77);
+}
+
+h2{
+   font-size: x-large;
+   color: brown;
+   
+}
+
+p{
+   font-size: larger;
+   color: rgb(12, 12, 116);
+   line-height: 50px;
+   
+   text-indent:25px
+   
+}
+
+#div1{
+   width: 57%;
+   background: none; 
+   display: inline-block;
+}
+
+aside{
+   width: 25%;
+   
+   margin-left: 50px;
+   margin-top:25px ;
+   padding-top: 25px;
+   padding-left: 50px;
+
+   display: inline-block; 
+   background-color: silver;
+
+   text-align: justify;
+   padding-right: 30px;
+}
+
+#sect2_div1{
+   width: 93%;
+   height: fit-content;
+}
+
+#sect2_div2{
+   width: 600px;
+   height: fit-content;
+   border:3px groove grey;
+   display: inline-block;
+   background: none;
+   margin-left: 55px;  
+}
+
+#sect2_div3{
+   width: 600px;
+   height: fit-content;
+   border:3px groove  grey;
+   display: inline-block;
+   background: none;
+   padding-left: 15px;
+}
+
+footer{
+   height: 60px;
+   border: 7px solid  rgb(219, 161, 176);
+}
+
+.span{
+   font-size: larger;
+   font-weight: bold;
+   color: #000;
+   float: right;
+   margin-top: 15px;
+   margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: lightgrey;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.705);
+  box-shadow: 7px 7px 8px rgba(61, 74, 78, 0.486);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  padding: 20px 90px;
+}
+
+/* ვარიანტი 1 */
+
+#var-1 {
+  justify-content: space-between;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-bar {
+  list-style: none;
+  margin-left: auto;
+}
+.nav-bar li {
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.nav-bar li a,
+.contact {
+  font-size: 22px;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.contact {
+  background-color: darkcyan;
+  padding: 10px 30px;
+  border-radius: 57px;
+}
+
+/* ვარიანტი 2 */
+
+#var-2 {
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+#logo2 {
+  order: 3;
+  margin-left: auto;
+  margin-right: 30px;
+}
+#var-2 .nav-bar {
+  order: 1;
+}
+
+#var-2 .contact {
+  order: 2;
+}
+
+/* ვარიანტი 3 */
+#var-3 {
+  margin: 20px auto;
+  justify-content: flex-end;
+}
+
+#logo3 {
+  margin-right: auto;
+}
+
+#var-3 .contact {
+  margin-left: 55px;
+}

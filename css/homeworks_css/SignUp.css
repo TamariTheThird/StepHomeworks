@@ -1,0 +1,101 @@
+* {
+          box-sizing: border-box;
+          margin: 0px;
+          padding:0px;
+}
+
+:root{
+      --color1: rgba(170, 113, 223, 0.651);
+      --color2: rgb(129, 14, 129); 
+      --color3: white;
+}
+
+body{
+        background-color: rgba(230, 217, 243, 0.342);
+}
+.frame{   
+        width: 380px;
+        max-width: 100%;
+        margin: 10vh auto;
+        padding: 30px 35px;
+        background-color: var(--color3);
+        border-radius: 10px;
+        box-shadow: 0 0 20px var(--color1);
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.frame h1{
+        font-size: 35px;
+        text-transform: capitalize;
+        color: var(--color2);
+        margin-bottom: 20px;
+}
+
+.form div{  
+        position: relative;
+}
+
+.form input{
+       width: 100%;
+       padding: 12px 14px;
+       margin: 13px 0px;
+       outline:none;
+       border-radius: 5px;
+       border: 1px solid var(--color1);
+       font-size: 20px;
+}
+                                   
+.form label{
+        font-size:18px;
+        text-transform: capitalize;
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        color:var(--color1);  
+        transition: 0.3s;
+}
+
+.form input:focus ~ label,
+.form input:valid ~ label
+{
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: capitalize;
+        top: -1px;
+        left: 10px;     
+        padding: 4px;  
+        background-color: var(--color3);     
+}
+
+.form input:valid ~ label{
+       color: var(--color1);                     
+}
+
+.form input:focus{
+      border:1px solid var(--color2);    
+}
+
+.form input:focus ~ label{   
+           
+        color: var(--color2);  
+}
+
+.form button{
+        padding: 13px 15px;
+        border-radius: 10px;
+        border: none;
+        background-color:var(--color2) ;
+        font-size: 20px;
+        font-weight: bold;  
+        color:var(--color3);
+        display: block;
+        margin-left:auto; 
+        margin-top: 15px;     
+}
+
+.form button:hover{
+        color: var(--color2);
+        background-color:var(--color1);      
+}
+

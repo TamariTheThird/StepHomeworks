@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(11, 11, 51);
+}
+
+.first-frame {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.second-frame {
+  width: 90%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vh auto;
+}
+
+/* card */
+.card-frame {
+  width: 360px;
+  margin: 20px 0;
+  padding: 25px;
+}
+
+.card-body {
+  height: 350px;
+  background-color: rgb(236, 241, 245);
+  border-radius: 7px;
+  box-shadow: -2px -1px 7px rgb(163, 206, 245);
+  padding: 25px;
+  position: relative;
+  transition: 2ms;
+}
+
+.card-body:hover {
+  box-shadow: 0px 0px 10px antiquewhite;
+  background-color: rgb(243, 224, 176);
+  transform: scale(1.1);
+}
+
+/* ქარდის მთავარი ნაწილი */
+
+.content {
+  height: 75%;
+  position: relative;
+}
+
+.card-cont1,
+.card-cont2,
+.content p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-cont1,
+.card-cont2 {
+  width: 100%;
+  max-height: 100%;
+}
+
+.card-cont2 {
+  z-index: -1;
+  visibility: hidden;
+}
+
+/* ქარდის before ელემენტი */
+
+.content::before {
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  top: -50px;
+}
+
+.content::before {
+  content: 'აფორიზმი';
+  background-color: rgb(22, 22, 100);
+  color: antiquewhite;
+  box-shadow: 0 0px 5px antiquewhite;
+}
+
+.check:checked + .content::before {
+  content: ' ანდაზა';
+  background-color: rgb(22, 122, 80);
+  box-shadow: 0px 0px 5px rgb(135, 243, 198);
+  color: rgb(245, 228, 185);
+}
+
+.check:checked {
+  background-color: rgb(22, 122, 80);
+}
+
+/* ტექსტი */
+.content p {
+  text-align: center;
+  font-size: 22px;
+  color: rgb(59, 14, 110);
+  padding: 10px 15px;
+}
+span {
+  font-size: 1.1em;
+}
+.p-span1 {
+  color: rgb(223, 130, 146);
+}
+.p-span2 {
+  color: rgb(192, 160, 17);
+}
+.p-span3 {
+  color: rgb(8, 175, 105);
+}
+.p-span4 {
+  color: rgb(107, 166, 221);
+}
+
+/* ტექსტის before/after ელემენტი */
+
+.content p::before,
+.content p::after {
+  font: var(--fa-font-solid);
+  content: '\f10d';
+  font-size: 16px;
+  color: rgba(70, 126, 189, 0.534);
+  display: inline-block;
+  position: absolute;
+}
+
+.content p::before {
+  top: -10px;
+  left: 15px;
+}
+.content p::after {
+  bottom: -10px;
+  right: 15px;
+}
+
+.check:checked + .content p::before,
+.check:checked + .content p::after {
+  color: rgba(22, 122, 80, 0.658);
+}
+
+/* checkbox/switcher */
+
+.check {
+  width: 60px;
+  height: 60px;
+  appearance: none;
+  border-radius: 50%;
+  bottom: 20px;
+  background-color: rgb(22, 22, 100);
+}
+
+.check,
+.check::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.check::before {
+  font: var(--fa-font-solid);
+  content: '\f01e';
+  color: antiquewhite;
+  font-size: 30px;
+  bottom: 15px;
+}
+
+.check:checked + .content .card-cont1 {
+  z-index: -1;
+  visibility: hidden;
+}
+
+.check:checked + .content .card-cont2 {
+  z-index: 0;
+  visibility: visible;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1300px) {
+  .card-frame {
+    width: 25%;
+    padding: 25px;
+  }
+  .second-frame {
+    margin: 7vh auto;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1165px) {
+  .card-frame {
+    width: 30%;
+    padding: 15px 30px;
+  }
+  .second-frame {
+    justify-content: center;
+    align-items: center;
+  }
+  .card-body:hover {
+    transform: scale(1.15, 1.12);
+  }
+}
+
+@media screen and (max-width: 1165px) and (min-width: 1110px) {
+  .card-frame {
+    width: 33.333%;
+    padding: 10px 28px;
+  }
+}
+
+@media screen and (max-width: 1110px) and (min-width: 950px) {
+  .card-frame {
+    width: 33%;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 950px) and (min-width: 850px) {
+  .card-frame {
+    width: 50%;
+    padding: 25px 40px;
+  }
+  .second-frame {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 745px) {
+  .card-frame {
+    width: 50%;
+    padding: 15px 40px;
+  }
+}
+
+/* tablet mode */
+
+@media screen and (max-width: 745px) and (min-width: 460px) {
+  .card-frame {
+    margin-top: 40px;
+  }
+  .second-frame {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-top: 0;
+  }
+  .content {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 460px) and (min-width: 380px) {
+  .card-frame {
+    width: 95%;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width: 300px) {
+  .card-frame {
+    width: 100%;
+    padding: 10px 28px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .card-frame {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}

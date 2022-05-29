@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../../images/morning.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-frame {
+  margin: 0 auto;
+}
+nav {
+  height: 80px;
+  margin-right: 100px;
+}
+
+.logo {
+  width: 85px;
+  height: 85px;
+  margin-left: 180px;
+}
+nav ul {
+  margin-right: 40px;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: capitalize;
+  color: white;
+  display: block;
+  padding: 0 20px;
+}
+nav ul ul {
+  position: absolute;
+  top: 35px;
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+
+#item-border {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 12px;
+}
+
+section {
+  width: 500px;
+  height: 280px;
+  margin: 170px auto;
+}
+
+.text {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.text h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.text h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.text a {
+  font-size: 14px;
+  padding: 15px 25px;
+  background-color: rgb(74, 147, 196);
+  border-radius: 64px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  display: inline-block;
+}

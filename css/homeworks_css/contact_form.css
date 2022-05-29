@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.main-body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/back-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.content-body {
+  width: 1140px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-body h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: rgb(36, 36, 136);
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.content-body p {
+  margin: 35px 30px;
+  padding: 35px 50px;
+  text-align: center;
+}
+/* ფორმა. ფორმის ელემენტები */
+.contact-form {
+  margin: 15px auto;
+  display: flex;
+}
+
+.input-area,
+.message-area {
+  width: 50%;
+  margin: 0px 30px;
+}
+
+.input-area input,
+.message-area textarea {
+  width: 100%;
+  margin: 15px auto;
+  padding: 12px;
+}
+
+.content-body p,
+.input-area input,
+.message-area textarea {
+  border: 0px rgb(230, 177, 235);
+  border-radius: 10px;
+  background: transparent;
+  background-color: rgba(212, 212, 200, 0.863);
+  box-shadow: 0px 0px 10px rgb(66, 66, 119);
+
+  font-size: 24px;
+  color: rgb(36, 36, 136);
+}
+
+.message-area textarea::placeholder,
+.input-area input::placeholder {
+  color: rgb(20, 20, 78);
+  font-size: 20px;
+  text-transform: capitalize;
+
+  cursor: default;
+}
+
+.message-area textarea {
+  height: 220px;
+}
+
+.message-area button {
+  padding: 15px 25px;
+  font-size: 24px;
+  background-color: rgb(68, 59, 77);
+  color: rgba(255, 255, 255, 0.863);
+  text-align: center;
+  border: 1px rgba(255, 255, 255, 0.863) solid;
+  border-radius: 15px;
+}
