@@ -2,7 +2,7 @@
   width: 1100px;
 }
 
-.btn {
+.mybtn {
   background-color: rgb(50, 182, 50) !important;
 }
 
@@ -10,8 +10,8 @@
   box-shadow: 0 0 5px rgb(64, 196, 196);
 }
 
-.btn:hover,
-.btn:active {
+.mybtn:hover,
+.mybtn:active {
   background-color: rgb(64, 196, 196) !important;
   box-shadow: none !important;
 }
