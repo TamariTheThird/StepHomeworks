@@ -168,7 +168,7 @@ footer .content .content-head .content-body {
 .section-4 .blockquote p::before,
 .section-4 .blockquote p::after {
   font: var(--fa-font-solid);
-  content: "\f10d";
+  content: '\f10d';
   font-size: 18px;
   color: rgb(196, 171, 29);
   display: inline-block;
@@ -220,7 +220,7 @@ footer .copyright span {
 
 @media (max-width: 995px) and (min-width: 300px) {
   .info-frame,
-.form-div {
+  .form-div {
     width: 100% !important;
     margin: 20px auto;
   }
@@ -229,7 +229,7 @@ footer .copyright span {
   }
   .info div {
     width: 30%;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
