@@ -1,0 +1,236 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+}
+
+header {
+  height: 100%;
+  background-image: url(../../images/backer-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(66, 81, 117);
+  background-blend-mode: darken;
+
+  .navbar {
+    background-color: rgb(66, 81, 117);
+    span {
+      color: rgb(196, 171, 29);
+    }
+    .nav-link {
+      padding: 3px 10px;
+      margin: 0 10px;
+      font-size: 16px;
+      color: white;
+      border-radius: 7px;
+      font-weight: 500;
+      &:hover {
+        background-color: rgb(196, 171, 29);
+        color: black !important;
+      }
+    }
+    .active {
+      color: rgb(196, 171, 29) !important;
+    }
+  }
+
+  .btn,
+  .link {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    margin: 7px;
+  }
+  .btn {
+    background-color: rgb(196, 171, 29);
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .link {
+    border: 1.5px solid rgb(196, 171, 29);
+    color: rgb(196, 171, 29);
+    padding: 8px 30px;
+    font-size: 15px;
+  }
+  .icon {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.content {
+  color: gray;
+}
+
+.section-1 {
+  padding: 75px 0;
+  img {
+    width: 100px;
+    height: 95px;
+    margin: 10px;
+  }
+}
+
+.section-2,
+.section-3,
+.section-5,
+footer {
+  padding: 35px 0;
+
+  .content {
+    padding-top: 35px;
+    .content-head {
+      width: 55%;
+      margin: 0 auto;
+      i {
+        color: rgb(196, 171, 29);
+      }
+      .content-body {
+        padding: 30px 0px;
+      }
+    }
+  }
+}
+
+.section-2 {
+  background-color: rgb(245, 245, 245);
+  .title {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+
+    &::first-letter {
+      font-size: 65px;
+      font-weight: 800;
+      color: gray;
+    }
+  }
+
+  .link {
+    font-weight: 500;
+    color: rgb(196, 171, 29);
+  }
+}
+
+.section-3 {
+  .row {
+    padding: 0 40px;
+    align-items: center;
+    img {
+      width: 340px;
+      height: 200px;
+    }
+  }
+}
+
+.section-4 {
+  padding: 45px 0;
+  .carousel-inner {
+    background-image: url(../../images/city.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .carousel-item {
+      height: 400px;
+      background-color: rgba(41, 53, 82, 0.945);
+      position: relative;
+
+      .item-body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+          border: 6px solid white;
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+  }
+  .blockquote {
+    position: relative;
+  }
+  .blockquote p::before,
+  .blockquote p::after {
+    font: var(--fa-font-solid);
+    content: '\f10d';
+    font-size: 18px;
+    color: rgb(196, 171, 29);
+    display: inline-block;
+    position: absolute;
+  }
+
+  .blockquote p::before {
+    left: -35px;
+  }
+  .blockquote p::after {
+    right: -35px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  .carousel-indicators .active {
+    background-color: rgb(12, 19, 36);
+  }
+}
+
+.section-5 {
+  .blog-text span {
+    font-size: 14px;
+  }
+  a {
+    color: gray;
+  }
+}
+
+footer {
+  .content {
+    background-color: rgb(66, 81, 117);
+    padding: 70px 0;
+  }
+  .info {
+    font-size: 25px;
+    i {
+      color: rgb(196, 171, 29);
+    }
+    small {
+      color: rgb(233, 230, 230);
+    }
+  }
+  .mybtn {
+    padding: 15px 25px !important;
+    background-color: rgb(196, 171, 29) !important;
+  }
+  .copyright span {
+    color: rgb(196, 171, 29);
+  }
+}
+
+@media (max-width: 995px) and (min-width: 300px) {
+  .info-frame,
+  .form-div {
+    width: 100% !important;
+    margin: 20px auto;
+  }
+  .info {
+    display: inline-flex;
+    div {
+      width: 30%;
+      font-size: 14px;
+    }
+  }
+}
